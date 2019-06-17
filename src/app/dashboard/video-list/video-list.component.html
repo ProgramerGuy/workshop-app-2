@@ -1,4 +1,12 @@
 <div class="card-container" *ngFor="let video of videos">
-  <h4>{{ video.title }}</h4>
-  <p>{{ video.author }}</p>
+  <b>{{ video.title }}</b> 
+  <br/>
+  Author: {{ video.author }}
+  <div class="">
+    <ul class="list">
+      <li *ngFor="let det of video.viewDetails">
+        <b>{{ det.region }}</b>: {{ det.age }}
+      </li>
+    </ul>
+  </div>
 </div>

@@ -1,7 +1,19 @@
 .card-container {
-  box-shadow: #ddd 1px 1px 1px;
+  box-shadow: #ddd 1px 1px 5px;
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
-  font-family: "Verdana", "sans-serif"
+  font-family: "Verdana", "sans-serif";
+  -webkit-transition: width 2s; /* Safari prior 6.1 */
+  transition: 0.2s;
+}
+
+.card-container:hover {
+  transform: scale(1.03);
+  background-color:rgb(0, 140, 255); 
+  color: white;
+}
+
+.list {
+  list-style: none;
 }
